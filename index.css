@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #52b788;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #40916c;
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom green color palette */
+.bg-green-50 {
+  background-color: #d8f3dc;
+}
+
+.bg-green-100 {
+  background-color: #b7e4c7;
+}
+
+.bg-green-200 {
+  background-color: #95d5b2;
+}
+
+.bg-green-300 {
+  background-color: #74c69d;
+}
+
+.bg-green-500 {
+  background-color: #52b788;
+}
+
+.bg-green-600 {
+  background-color: #40916c;
+}
+
+.bg-green-700 {
+  background-color: #2d6a4f;
+}
+
+.bg-green-800 {
+  background-color: #1b4332;
+}
+
+.bg-green-900 {
+  background-color: #081c15;
+}
+
+.text-green-50 {
+  color: #d8f3dc;
+}
+
+.text-green-100 {
+  color: #b7e4c7;
+}
+
+.text-green-200 {
+  color: #95d5b2;
+}
+
+.text-green-300 {
+  color: #74c69d;
+}
+
+.text-green-500 {
+  color: #52b788;
+}
+
+.text-green-600 {
+  color: #40916c;
+}
+
+.text-green-700 {
+  color: #2d6a4f;
+}
+
+.text-green-800 {
+  color: #1b4332;
+}
+
+.text-green-900 {
+  color: #081c15;
+}
+
+.border-green-500 {
+  border-color: #52b788;
+}
+
+.ring-green-500 {
+  --tw-ring-color: #52b788;
+}
+
+/* Enhanced hover effects */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Focus states */
+.focus\:ring-green-500:focus {
+  --tw-ring-color: #52b788;
+}
+
+.focus\:border-green-500:focus {
+  border-color: #52b788;
+}
